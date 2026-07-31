@@ -4,7 +4,9 @@ OBIETTIVI DEL PROGETTO
 • Obiettivo:sviluppare un Syslog Server per raccogliere tutti i log dei dispositivi di rete
 • Infrastruttura:
 1.Hypervisor: VirtualBox.
+
 2.Sistemi Operativi: 3 Macchine Virtuali (Ubuntu / Debian).
+
 3.Configurazione di Rete: Modalità Bridge (per farle comunicare tra loro e con il router)
 
 
