@@ -42,3 +42,12 @@ Inviandoli in tempo reale al Syslog Server, si avrà sempre una copia salva.
 restart rsyslog per rendere attive le modifiche e avviare
 la trasmissione.
 
+![Schermata 3](Immagini/Immagine3.png)
+
+
+# TEST
+
+1. Monitoraggio Server: Esecuzione di **sudo tail -f /var/log/syslog** per osservare l'arrivo dei dati intempo reale.
+2. Generazione Log di Test: Esecuzione delcomando logger "CIAO" sul Client per forzarel'invio di un log
+
+![Schermata 4](Immagini/Immagine4.png)
