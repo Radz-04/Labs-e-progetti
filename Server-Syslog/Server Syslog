@@ -6,5 +6,4 @@ OBIETTIVI DEL PROGETTO
 1.Hypervisor: VirtualBox.
 2.Sistemi Operativi: 3 Macchine Virtuali (Ubuntu / Debian).
 3.Configurazione di Rete: Modalità Bridge (per farle comunicare tra loro e con il router)
-
-![Schermata 1](./Server-Syslog/Immagini/Immagine1.png)
+![Schermata 1](/Server-Syslog/Immagini/Immagine1.png)
