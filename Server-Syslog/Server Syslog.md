@@ -21,16 +21,19 @@
 # PERCHÉ CENTRALIZZARE I LOG?
 
 • Risoluzione dei Problemi (Troubleshooting) più veloce: Non serve accedere singolarmente a ogni client per capire cosa si è rotto. Tutti gli eventi e gli errori si leggono da un unico punto.
+
 • Maggiore Sicurezza e Integrità dei Dati: Se un client viene attaccato o subisce un guasto , i log locali potrebbero essere cancellati o inaccessibili.
 Inviandoli in tempo reale al Syslog Server, si avrà sempre una copia salva.
+
 • Visione Globale dell'Infrastruttura: Permette di monitorare tutta la rete simultaneamente
 
 # CONFIGURAZIONE DEL SERVER
 
 1. Aggiornamento: Esecuzione di **sudo apt update && sudo apt upgrade** per aggionare i pacchetti.
-2. Verifica IP: Identificazione dell'indirizzo di rete tramite il comando **ip a**.
-3. Abilitazione Protocolli: Rimozione del commento (#) nel file **/etc/rsyslog.conf** per attivare i moduli di ricezione UDPsulla porta 514. Oltre al protocollo UDP (porta 514), ho scelto di abilitare anche il protocollo TCP per garantire il supporto a dispositivi che richiedono la consegna garantita dei log.
-4. Riavvio Servizio: Esecuzione di **sudo systemctl restart rsyslog** per rendere attive le modifiche.
+  
+3. Verifica IP: Identificazione dell'indirizzo di rete tramite il comando **ip a**.
+4. Abilitazione Protocolli: Rimozione del commento (#) nel file **/etc/rsyslog.conf** per attivare i moduli di ricezione UDPsulla porta 514. Oltre al protocollo UDP (porta 514), ho scelto di abilitare anche il protocollo TCP per garantire il supporto a dispositivi che richiedono la consegna garantita dei log.
+5. Riavvio Servizio: Esecuzione di **sudo systemctl restart rsyslog** per rendere attive le modifiche.
 
 ![Schermata 2](Immagini/Immagine2.png)
 
@@ -48,6 +51,6 @@ la trasmissione.
 # TEST
 
 1. Monitoraggio Server: Esecuzione di **sudo tail -f /var/log/syslog** per osservare l'arrivo dei dati intempo reale.
-2. Generazione Log di Test: Esecuzione delcomando logger "CIAO" sul Client per forzarel'invio di un log
+2. Generazione Log di Test: Esecuzione delcomando **logger "CIAO"** sul Client per forzarel'invio di un log
 
 ![Schermata 4](Immagini/Immagine4.png)
