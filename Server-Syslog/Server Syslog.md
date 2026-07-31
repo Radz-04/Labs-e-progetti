@@ -37,7 +37,7 @@ Inviandoli in tempo reale al Syslog Server, si avrà sempre una copia salva.
 
 # CONFIGURAZIONE DEI CLIENT
 
-1. Configurazione Inoltro: Apertura del file **/etc/rsyslog.conf** e inserimento della riga ***.* @192.168.1.43**per l'invio in UDP.
+1. Configurazione Inoltro: Apertura del file **/etc/rsyslog.conf** e inserimento della riga **\*.\* @192.168.1.43** per l'invio in UDP.
 2. Riavvio Servizio: Esecuzione di sudo systemctl
 restart rsyslog per rendere attive le modifiche e avviare
 la trasmissione.
