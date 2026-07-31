@@ -1,5 +1,4 @@
 # IMPLEMENTAZIONE DI UN SYSLOG SERVER
-
 ## OBIETTIVI DEL PROGETTO
 
 • Obiettivo:sviluppare un Syslog Server per raccogliere tutti i log dei dispositivi di rete
