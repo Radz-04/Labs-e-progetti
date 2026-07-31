@@ -1,8 +1,11 @@
 # IMPLEMENTAZIONE DI UN SYSLOG SERVER
 
 OBIETTIVI DEL PROGETTO
+
 • Obiettivo:sviluppare un Syslog Server per raccogliere tutti i log dei dispositivi di rete
+
 • Infrastruttura:
+
 1.Hypervisor: VirtualBox.
 
 2.Sistemi Operativi: 3 Macchine Virtuali (Ubuntu / Debian).
